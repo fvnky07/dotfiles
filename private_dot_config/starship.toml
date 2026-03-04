@@ -1,6 +1,6 @@
 format = """\
 [╭╴](fg:arrow)\
-$username\
+$username$hostname\
 $directory\
 (\
     $git_branch\
@@ -49,9 +49,14 @@ text_light = "#26272A"
 [username]
 style_user = 'bold os'
 style_root = 'bold os_admin'
-format = '[ $user](fg:$style) '
+format = '[ $user](fg:$style)'
 disabled = false
 show_always = true
+
+[hostname]
+ssh_only = true
+format = '[@$hostname](bold fg:os) '
+disabled = false
 
 [os]
 format = "on [($name)]($style) "
