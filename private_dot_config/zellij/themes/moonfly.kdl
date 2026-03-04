@@ -1,0 +1,52 @@
+// moonfly theme for Zellij
+//
+// Upstream: github.com/bluz71/vim-moonfly-colors
+
+themes {
+    moonfly {
+        fg 189 189 189
+        bg 8 8 8
+        black 8 8 8
+        red 216 51 75
+        green 140 200 95
+        yellow 247 140 108
+        blue 89 138 255
+        magenta 207 135 232
+        cyan 121 218 200
+        white 198 198 198
+        orange 247 140 108
+        
+        text_unselected {
+            base 189 189 189
+            background 8 8 8
+            emphasis_0 247 140 108
+            emphasis_1 121 218 200
+            emphasis_2 140 200 95
+            emphasis_3 207 135 232
+        }
+        text_selected {
+            base 189 189 189
+            background 64 64 64
+            emphasis_0 247 140 108
+            emphasis_1 121 218 200
+            emphasis_2 140 200 95
+            emphasis_3 207 135 232
+        }
+        ribbon_selected {
+            base 8 8 8
+            background 140 200 95
+            emphasis_0 216 51 75
+            emphasis_1 132 105 100
+            emphasis_2 171 101 217
+            emphasis_3 89 138 255
+        }
+        ribbon_unselected {
+            base 8 8 8
+            background 198 198 198
+            emphasis_0 216 51 75
+            emphasis_1 108 108 108
+            emphasis_2 89 138 255
+            emphasis_3 198 198 198
+        }
+    }
+}

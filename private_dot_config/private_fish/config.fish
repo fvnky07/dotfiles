@@ -10,6 +10,9 @@ set -gx PAGER less
 set -gx LANG en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 
+#doom emacs 
+set -gx PATH $HOME/.config/emacs/bin $PATH
+
 #python
 set -gx PATH ~/Library/Python/3.9/bin $PATH
 # Flutter
@@ -35,8 +38,8 @@ fish_add_path ~/go/bin
 
 # --- pnpm ---
 # NOTE: pnpm self-managed shims directory (latest practice - no global PREFIX override)
-set -gx PNPM_HOME $HOME/.local/share/pnpm
-fish_add_path $PNPM_HOME
+set -gx PNPM_HOME ~/.local/share/pnpm
+set -gx PATH $PNPM_HOME $PATH
 
 starship init fish | source
 
@@ -80,7 +83,7 @@ function zl
     and ls
 end
 alias v='nvim'
-alias ai='opencode'
+alias oc='opencode'
 alias c='clear'
 alias ls="eza -al --color=always --group-directories-first --icons"
 alias lst="eza -al --color=always --group-directories-first --icons --tree"
@@ -88,8 +91,6 @@ alias so="source ~/.config/fish/config.fish"
 alias metro='dart run nylo_framework:main'
 alias afkon='sudo pmset -a disablesleep 1'
 alias afkoff='sudo pmset -a disablesleep 0'
-
-
 
 # --- Greeting ---
 set fish_greeting # Disable default Fish greeting

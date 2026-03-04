@@ -1,6 +1,11 @@
 theme = tokyonight_night
-font-family = 0xProto Nerd Font
-font-size = 18
+font-size = 16
+font-family = Ellograph CF
+font-family-bold = Ellograph CF Bold
+font-family-italic = Ellograph CF Thin Italic
+font-family-bold-italic =  Ellograph CF Bold Italic
+
 window-padding-x = 0
 window-padding-y = 0
 window-decoration = none
+mouse-hide-while-typing = true
